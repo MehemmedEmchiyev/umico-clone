@@ -1,0 +1,6 @@
+@import "tailwindcss";
+.wrapper{width: 80%;margin: auto;
+}
+@theme{
+    --color-root-color : #1C2147;
+}

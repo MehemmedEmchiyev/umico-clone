@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="output.css">
+    <link rel="stylesheet" href="input.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div id="modal" class="hidden px-2 fixed top-0 left-0 w-full h-full bg-[rgba(0,0,0,.5)] items-center justify-center">
+        <div class=" w-full md:w-[500px] h-max bg-white">
+            <div class="py-3 px-4 border-b-1 border-[#d5d5d5]">
+                <h2 class="text-[24px] font-medium text-[#1e244d]">6-rəqəmli kodu daxil edin</h2>
+            </div>
+            <div class="p-6 flex flex-col items-center justify-center">
+                <div class="w-full pb-2">
+                    <div class="flex items-center gap-4">
+                        <input id="fakeOtpCode" type="number" class="w-full border-1 outline-0 px-2 py-4 border-[#d5d5d5]" placeholder="000-000"/>
+                    </div>
+                </div>   
+                <button class="w-full py-3 cursor-pointer bg-[#7c62e3] text-white font-medium" onclick="orderConfirm()">Sifarişi təsdiq edin</button>            
+            </div> 
+        </div>
+    </div>
+    <div id="grayUi" class="hidden fixed w-full h-full top-0 left-0 z-10 bg-[rgb(128,128,128,0.5)]"></div>
+    <div class="hidden lg:!hidden text-white bg-[#242B58] z-300 pt-38 fixed h-screen w-full top-0 px-3 left-0 " id="hamburgerMenu">
+    </div>
+    <header class=" bg-[#242B58] z-303 text-white fixed top-0 left-0 w-full">
+    </header>
+
+    <main class=" pt-28 md:pt-20 lg:pt-25 bg-[#F7F7F7]">
+        <div class="w-full md:w-[85%] h-max md:h-[80vh] m-auto px-4 pb-6 flex items-center justify-center">
+            <div class="bg-white w-full md:w-[500px]">
+                <div class="py-3 px-4 border-b-1 border-[#d5d5d5]">
+                    <h2 class="text-[24px] font-medium text-[#1e244d]">Mobil telefonunuzu daxil edin</h2>
+                </div>
+                <div class="p-6 flex items-center justify-center">
+                    <div class="w-full">
+                        <div class="flex items-center gap-4">
+                            <div class="border-1 outline-0 px-2 py-[3px] border-[#d5d5d5]"><svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 960 640"><rect width="960" height="213.3" fill="#00b9e4"/><rect y="213.3" width="960" height="213.3" fill="#ed2939"/><rect y="426.6" width="960" height="213.4" fill="#3f9c35"/><circle cx="420" cy="320" r="60" fill="#fff"/><circle cx="440" cy="320" r="48" fill="#ed2939"/><g fill="#fff" transform="translate(500 320) scale(1.2)"><g id="star-arm"><polygon points="0,-15 4,-5 15,0 4,5 0,15 -4,5 -15,0 -4,-5"/></g><use href="#star-arm" transform="rotate(45)"/><use href="#star-arm" transform="rotate(90)"/><use href="#star-arm" transform="rotate(135)"/><use href="#star-arm" transform="rotate(180)"/><use href="#star-arm" transform="rotate(225)"/><use href="#star-arm" transform="rotate(270)"/><use href="#star-arm" transform="rotate(315)"/></g></svg></div>
+                            <input id="numberInput" type="number" class="w-full border-1 outline-0 px-2 py-4 border-[#d5d5d5]" placeholder="+994-89-123-45-67"/>
+                        </div>
+                        <button class="text-center py-3 inline-block w-full cursor-pointer whitespace-nowrap px-1 font-semibold text-white border-1 bg-[#7c62e3] mt-3  " onclick='openModal()'>İrəli</button>
+                        <div class="flex items-center gap-3 justify-center py-4">
+                            <div class="w-[50px] h-[1px] bg-[#e3e3e3] mt-1"></div>
+                            <div>və ya</div>
+                            <div class="w-[50px] h-[1px] bg-[#e3e3e3] mt-1"></div>
+                        </div>
+                        <button class="text-center py-3 inline-block w-full cursor-pointer whitespace-nowrap px-1 font-semibold text-black border-1 bg-transparent mt-3  " onclick='openModal()'>Bir ID ilə daxil ol</button>
+                        <p class="py-4 px-3 text-[11px] text-[#b4b4b4] text-center">
+                            Qeydiyyatdan keçərək və ya xidmətdən istifadə etməyə davam edərək, siz avtomatik olaraq Umico Bonus, Umico Market, BirID istifadəçi razılaşmaları və məxfilik siyasəti ilə razılaşırsınız.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    
+<footer class="bg-[#f9f9fc] text-[#2c2c51] px-6 md:px-20 py-10  ">
+  </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="elements.js" type="module"></script>
+    <script src="index.js" type="module"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="oreder.js"></script>
+    <script src="basket.js"></script>
+</body>
+</html>

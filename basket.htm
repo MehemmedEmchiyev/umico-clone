@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="output.css">
+    <link rel="stylesheet" href="input.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body class="bg-[#F7F7F7] ">
+    
+    <div class="fixed bottom-0 w-full px-1  py-3 bg-white">
+        <div class="flex py-2 md:hidden items-center justify-between w-full">
+            <span class="font-semibold text-[#1e244d] text-[14px] ">Sifarişin məbləği (<span id="resCount"></span> məhsul):</span>
+            <span class="font-bold text-[#1e244d] text-[18px]"><span id="resTotalPr"></span> ₼</span>
+        </div>
+        <div class="w-full md:w-[85%] mx-auto flex items-center gap-3">
+            <a class="text-center py-3 inline-block w-full cursor-pointer md:w-[400px] whitespace-nowrap px-1 font-semibold text-[#7c62e3] border-1 bg-transparent" href="order.htm">Sifarişi kreditlə rəsmiləsdirmək</a>
+            <a class="text-center py-3 inline-block w-full cursor-pointer md:w-[400px] font-semibold text-white border-1 bg-[#7c62e3]" href="order.htm">Sifariş Et</a>
+        </div>
+    </div>
+
+    <div id="grayUi" class="hidden fixed w-full h-full top-0 left-0 z-10 bg-[rgb(128,128,128,0.5)]"></div>
+    <div class="hidden lg:!hidden text-white bg-[#242B58] z-300 pt-38 fixed h-screen w-full top-0 px-3 left-0 " id="hamburgerMenu">
+    </div>
+    <header class=" bg-[#242B58] z-303 text-white fixed top-0 left-0 w-full">
+    </header>
+
+    <main class=" pt-28 md:pt-20 lg:pt-25 ">
+        <div class="bg-[#F7F7F7]">
+            <div class="w-full md:w-[85%] m-auto px-4 pb-6">
+                <div class="flex items-center gap-3">
+                    <h2 class="text-[24px] font-bold text-[#1e244d]">Səbət</h2>
+                    <p class="text-[12px] ">Səbətinizdə <span id="basketElemCount"></span> məhsul var</p>
+                </div>
+                <div  class="flex justify-between pt-5 min-h-max">
+                    <div id="cards"></div>
+                    <div class="!sticky top-24 bg-white h-max hidden md:flex items-center  gap-10 justify-between p-4">
+                        <span class="font-semibold text-[#1e244d] text-[14px]">Sifarişin məbləği (<span id="ProductCount"></span> məhsul):</span>
+                        <span class="font-bold text-[#1e244d] text-[18px]"><span id="totalPr"></span> ₼</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="hidden"></footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="elements.js" type="module"></script>
+    <script src="basket.js" ></script>
+    <script src="index.js" type="module"></script>
+</body>
+</html>

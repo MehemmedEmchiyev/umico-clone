@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="output.css">
+    <link rel="stylesheet" href="input.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div id="grayUi" class="hidden fixed w-full h-full top-0 left-0 z-10 bg-[rgb(128,128,128,0.5)]"></div>
+
+    <div class="hidden lg:!hidden text-white bg-[#242B58] z-300 pt-38 fixed h-screen w-full top-0 px-3 left-0 " id="hamburgerMenu">
+    </div>
+    <header class=" bg-[#242B58] z-303 text-white fixed top-0 left-0 w-full">
+    </header>
+
+    <main class=" pt-28 md:pt-20 lg:pt-25 ">
+        <div class="w-full md:w-[80%] mx-auto px-2">
+            <div>
+                <div class="text-[13px] text-[#7C62E3] flex items-center cursor-pointer"><a href="index.htm">Əsas</a></div>
+                <h2 class="text-[24px] font-bold pt-3 pb-4" id="title">Məhsul kateqoriyaları</h2>
+            </div>
+        </div>
+        <div class="!bg-[#F7F7F7]">
+            <div  class="w-full md:w-[80%] mx-auto px-2 py-4">
+                <div id="catalog" class="grid grid-cols-2 md:grid-cols-5 gap-10">
+                    <div class="cursor-pointer py-5 flex flex-col items-center justify-center bg-white duration-300 hover:shadow-md">
+                        <div class="!w-[150px] h-[150px]">
+                            <img class="w-full h-full object-cover" src="https://strgimgr.umico.az/dcmimages/3469/iconqaynar_27840_38858.png" alt="">
+                        </div>
+                        <p class="w-[150px]">Lorem ipsum, dolor sit amet consectetur</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="bg-[#f9f9fc] text-[#2c2c51] px-6 md:px-20 py-10  ">
+    </footer>
+    <script src="elements.js" type="module"></script>
+    <script src="index.js" type="module"></script>
+    <script src="catalog.js"></script>
+</body>
+</html>
