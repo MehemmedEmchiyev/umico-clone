@@ -73,7 +73,7 @@ function renderProducts(arg){
                                 <i class="hover:text-[#F81A5D] cursor-pointer fa-regular fa-heart"></i>
                                 <i class="hover:text-[#F81A5D] cursor-pointer fa-solid fa-scale-balanced"></i>
                         </div> 
-                        <a href="product.htm?id=${item.id}"><img src="${item.img_url_original}" class="w-full h-full object-contain" alt=""></a>
+                        <a href="../html/product.htm?id=${item.id}"><img src="${item.img_url_original}" class="w-full h-full object-contain" alt=""></a>
                 </div>
                 <div >
                         <span class="bg-[#FE4B80] text-white font-bold text-[14px] inline-block px-1">-${Math.trunc(item.discount)}%</span>
@@ -112,6 +112,6 @@ function getProblem(){
                 text: "Təəssüfki Bu Kategoriyada Məhsul Yoxdur",
               });
         setTimeout(() => {
-                location.href = "index.htm"
+                location.href = "../index.htm"
         },1000)      
 }

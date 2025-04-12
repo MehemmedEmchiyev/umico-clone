@@ -55,7 +55,7 @@ function renderDiscountArr(start,end){
                                         <i class="hover:text-[#F81A5D] cursor-pointer fa-regular fa-heart"></i>
                                         <i class="hover:text-[#F81A5D] cursor-pointer fa-solid fa-scale-balanced"></i>
                                 </div> 
-                                <a href="product.htm?id=${item.id}"><img src="${item.img_url_original}" class="w-full h-full object-contain" alt=""></a>
+                                <a href="../html/product.htm?id=${item.id}"><img src="${item.img_url_original}" class="w-full h-full object-contain" alt=""></a>
                             </div>
                             <span class="bg-[#F81A5D] text-[14px] text-white font-bold inline-block px-1">-${Math.trunc(item.discount)}%</span>
                             <div  class="py-2 flex items-end gap-3">

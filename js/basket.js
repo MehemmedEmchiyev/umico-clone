@@ -59,7 +59,7 @@ function renderBasket(){
                     <span class="px-3 py-1">${item.count}</span>
                     <button class="px-3 py-1 text-lg border-l-1 border-[#cfcfcf]" onclick="renderCount(${item.id},1)">+</button>
                 </div>
-                <button class="hidden md:inline ml-4 text-gray-400 text-2xl hover:text-red-500"  >×</button>
+                <button class="hidden md:inline ml-4 text-gray-400 text-2xl hover:text-red-500"  onclick="deletBasket(${item.id})">×</button>
                 </div>
                 <div class="max-w-4xl mx-auto p-4 text-right text-gray-600 text-[14px]">
                 Ümumi qiymət: <span class="font-bold text-gray-900 text-lg pl-2">${(item.retail_price * item.count).toFixed(2)} ₼</span>

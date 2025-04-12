@@ -25,13 +25,13 @@ const parentCategory = document.getElementById("parentCategory")
 function getCategory(){     
         let kod = ''
         categoryArr.data.map((item) => {
-                kod += `<li class="whitespace-nowrap py-[10px] text-[13px] hover:text-[#7C62E3] cursor-pointer flex items-center gap-2"><img src="${item.icons.menu_icon}" /> <a href="filter.htm?category=${item.slugged_name}">${item.name}</a> </li>`
+                kod += `<li class="whitespace-nowrap py-[10px] text-[13px] hover:text-[#7C62E3] cursor-pointer flex items-center gap-2"><img src="${item.icons.menu_icon}" /> <a href="../html/filter.htm?category=${item.slugged_name}">${item.name}</a> </li>`
         })
         category.innerHTML = kod
 }
 function getDropCategory(arg){
         let kod = ''
-        categoryArr.data[arg].child_ids.map((item) => {kod += `<li class="whitespace-nowrap py-[10px] text-[13px] hover:text-[#7C62E3] cursor-pointer flex items-center gap-2"><a href="filter.htm?category=${item.slugged_name}">${item.name}</a></li>`})       
+        categoryArr.data[arg].child_ids.map((item) => {kod += `<li class="whitespace-nowrap py-[10px] text-[13px] hover:text-[#7C62E3] cursor-pointer flex items-center gap-2"><a href="../html/filter.htm?category=${item.slugged_name}">${item.name}</a></li>`})       
         dropCategory.innerHTML = kod
         dropCategory.onmouseenter = () => {grayUi.classList.toggle("hidden")}
 }
@@ -88,7 +88,7 @@ function render(arr,tag){
                                         <i class="hover:text-[#F81A5D] cursor-pointer fa-regular fa-heart"></i>
                                         <i class="hover:text-[#F81A5D] cursor-pointer fa-solid fa-scale-balanced"></i>
                                 </div> 
-                                <a href="product.htm?id=${item.id}"><img src="${item.img_url_original}" class="w-full h-full object-contain" alt=""></a>
+                                <a href="../html/product.htm?id=${item.id}"><img src="${item.img_url_original}" class="w-full h-full object-contain" alt=""></a>
                             </div>
                             <span class="bg-[#F81A5D] text-[14px] text-white font-bold inline-block px-1">-${Math.trunc(item.discount)}%</span>
                             <div  class="py-2 flex items-end gap-3">

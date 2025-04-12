@@ -52,7 +52,7 @@ function event(){
                           <img src="${item.img_url_original}" class="w-full h-full object-contain" />
                         </div>
                         <div>
-                          <a href="product.htm?id=${item.id}"><h2 class="text-start text-[24px] font-bold">${item.name}</h2></a>
+                          <a href="../html/product.htm?id=${item.id}"><h2 class="text-start text-[24px] font-bold">${item.name}</h2></a>
                           <h3 class="italic text-[14px] text-[#b0b0b0] text-start">${item.category.category_name}</h3>
                         </div>
                       </div>

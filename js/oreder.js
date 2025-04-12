@@ -31,7 +31,7 @@ function orderConfirm(){
       })
       setTimeout(()=>{
         modal.classList.remove("!flex")
-        window.location.href = (`index.htm`)
+        window.location.href = (`../index.htm`)
         basketArr.length = 0
         localStorage.setItem("basket",JSON.stringify(basketArr))
 
