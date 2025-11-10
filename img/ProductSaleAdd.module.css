@@ -1,0 +1,33 @@
+.productSaleAdd {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-gap: 10px;
+  padding: 20px;
+}
+
+/* Example styling for a full-width input */
+.productSaleAdd input[type="text"], .productSaleAdd select, .productSaleAdd textarea {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box; /* Important: Keeps padding within the element's total width */
+}
+
+/* Example styling for a button */
+.productSaleAdd button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* Example styling for labels */
+.productSaleAdd label {
+  font-weight: bold;
+  margin-bottom: 5px;
+  display: block;
+}
