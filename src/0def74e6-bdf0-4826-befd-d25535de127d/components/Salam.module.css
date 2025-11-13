@@ -1,0 +1,12 @@
+.salamContainer {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 10px;
+  padding: 10px;
+}
+
+.gridCell6 {
+  grid-column: span 6;
+}
+
+/* Add more styles as needed */
